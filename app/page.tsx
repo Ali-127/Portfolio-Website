@@ -36,6 +36,55 @@ export default function Home() {
           <span className="portrait-label">01 / Hello</span>
         </section>
       </div>
+
+      <section className="skills-section" aria-labelledby="skills-title">
+        <div className="skills-intro">
+          <p className="section-kicker">02 / Skillset</p>
+          <h2 id="skills-title">
+            Tools for turning
+            <span>ideas into systems.</span>
+          </h2>
+          <p className="skills-description">
+            From fast prototypes to dependable production platforms, these are
+            the tools I use to shape products, APIs, and experiences that can
+            grow with the people using them.
+          </p>
+          <div className="skills-rule" aria-hidden="true" />
+          <p className="skills-note">A connected stack, from interface to core.</p>
+        </div>
+
+        <div className="skill-tree" aria-label="Programming language and framework relationships">
+          <div className="skill-branch branch-python">
+            <div className="skill-node skill-parent">Python</div>
+            <div className="skill-children">
+              <div className="skill-connection"><span className="packet" aria-hidden="true" /></div>
+              <div className="skill-node">Django</div>
+              <div className="skill-connection"><span className="packet" aria-hidden="true" /></div>
+              <div className="skill-node">FastAPI</div>
+            </div>
+          </div>
+
+          <div className="skill-branch branch-javascript">
+            <div className="skill-node skill-parent">JavaScript</div>
+            <div className="skill-children">
+              <div className="skill-connection"><span className="packet" aria-hidden="true" /></div>
+              <div className="skill-node">React</div>
+              <div className="skill-connection"><span className="packet" aria-hidden="true" /></div>
+              <div className="skill-node">Next.js</div>
+              <div className="skill-connection"><span className="packet" aria-hidden="true" /></div>
+              <div className="skill-node">Node.js</div>
+            </div>
+          </div>
+
+          <div className="skill-branch branch-systems">
+            <div className="skill-node skill-parent">C / C++</div>
+            <div className="skill-children">
+              <div className="skill-connection"><span className="packet" aria-hidden="true" /></div>
+              <div className="skill-node">Systems thinking</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
