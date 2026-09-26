@@ -1,4 +1,14 @@
 import Image from "next/image";
+import {
+  FaEnvelope,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaRedditAlien,
+  FaTelegram,
+  FaXTwitter,
+} from "react-icons/fa6";
+import ProjectsCarousel from "./projects-carousel";
 
 export default function Home() {
   return (
@@ -176,6 +186,253 @@ export default function Home() {
                 Systems thinking
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="relative overflow-hidden px-6 py-20 sm:px-10 sm:py-28 lg:px-20 lg:py-40"
+        aria-labelledby="projects-title"
+      >
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 max-w-2xl sm:mb-16">
+            <p className="mb-5 font-mono text-[0.7rem] leading-relaxed tracking-[0.16em] text-accent uppercase sm:mb-8">
+              03 / Selected work
+            </p>
+            <h2
+              id="projects-title"
+              className="max-w-[12ch] text-[clamp(3rem,5.4vw,6rem)] leading-[0.96] font-normal tracking-[-0.04em] text-paper"
+            >
+              Projects made
+              <span className="block text-muted">to be useful.</span>
+            </h2>
+          </div>
+
+          <article className="grid items-center gap-8 border-t border-paper/20 py-8 sm:gap-12 sm:py-12 lg:grid-cols-[minmax(0,1.25fr)_minmax(18rem,0.75fr)] lg:gap-16">
+            <ProjectsCarousel />
+            <div className="max-w-xl">
+              <p className="mb-4 font-mono text-xs tracking-[0.14em] text-accent uppercase">
+                React · Supabase · Reservation flow
+              </p>
+              <h3 className="text-3xl font-normal tracking-[-0.03em] text-paper sm:text-4xl">
+                The Wild Oasis website
+              </h3>
+              <p className="mt-5 text-base leading-relaxed text-[#c4cbbf] sm:text-lg">
+                A cabin reservation experience built while following Jonas
+                Schmedtmann’s React course. Guests can explore cabins and
+                nightly prices, choose reservation dates, create an account, and
+                update their profile information.
+              </p>
+              <p className="mt-6 font-mono text-xs tracking-[0.12em] text-muted uppercase">
+                Practice project · React course
+              </p>
+            </div>
+          </article>
+
+          <article className="grid items-center gap-8 border-t border-paper/20 py-8 sm:gap-12 sm:py-12 lg:grid-cols-[minmax(18rem,0.75fr)_minmax(0,1.25fr)] lg:gap-16">
+            <div className="order-2 max-w-xl lg:order-1">
+              <p className="mb-4 font-mono text-xs tracking-[0.14em] text-accent uppercase">
+                Django REST Framework · PostgreSQL · JWT
+              </p>
+              <h3 className="text-3xl font-normal tracking-[-0.03em] text-paper sm:text-4xl">
+                Taskflow API
+              </h3>
+              <p className="mt-5 text-base leading-relaxed text-[#c4cbbf] sm:text-lg">
+                A professional REST API for project and task management, built
+                independently with Django REST Framework and PostgreSQL. It
+                includes JWT authentication, advanced filtering, automatically
+                generated API documentation, and comprehensive test coverage.
+              </p>
+              <p className="mt-6 font-mono text-xs tracking-[0.12em] text-muted uppercase">
+                Independent project · Backend API
+              </p>
+            </div>
+            <div className="relative order-1 overflow-hidden border border-paper/20 bg-[#151d18] p-5 sm:p-8 lg:order-2">
+              <div className="mb-8 flex items-center gap-2 border-b border-paper/15 pb-4">
+                <span className="size-2 rounded-full bg-[#e8b85b]" />
+                <span className="size-2 rounded-full bg-[#a7afa1]/70" />
+                <span className="size-2 rounded-full bg-[#a7afa1]/40" />
+                <span className="ml-auto font-mono text-[0.65rem] tracking-[0.12em] text-muted uppercase">
+                  taskflow / api
+                </span>
+              </div>
+              <div className="space-y-5 font-mono text-xs leading-relaxed sm:text-sm">
+                <p className="text-muted">{"// project workspace"}</p>
+                <p>
+                  <span className="text-accent">GET</span>
+                  <span className="ml-3 text-paper">
+                    /api/projects/?status=active
+                  </span>
+                </p>
+                <p className="pl-4 text-muted">
+                  200 OK <span className="text-paper">· 12 projects</span>
+                </p>
+                <div className="h-px bg-paper/15" />
+                <p>
+                  <span className="text-[#9bc58b]">POST</span>
+                  <span className="ml-3 text-paper">/api/tasks/</span>
+                </p>
+                <p className="pl-4 text-muted">
+                  Authorization:{" "}
+                  <span className="text-paper">Bearer ········</span>
+                </p>
+                <p className="pl-4 text-muted">
+                  201 Created{" "}
+                  <span className="text-paper">· task assigned</span>
+                </p>
+              </div>
+              <div className="mt-8 flex flex-wrap gap-2">
+                {["JWT AUTH", "FILTERING", "API DOCS", "TESTED"].map(
+                  (feature) => (
+                    <span
+                      key={feature}
+                      className="border border-paper/20 px-2.5 py-1.5 font-mono text-[0.6rem] tracking-[0.1em] text-muted"
+                    >
+                      {feature}
+                    </span>
+                  ),
+                )}
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        className="relative overflow-hidden px-6 py-24 sm:px-10 sm:py-32 lg:px-20 lg:py-40"
+        aria-labelledby="contact-title"
+      >
+        <div className="mx-auto max-w-7xl text-center">
+          <p className="mb-5 font-mono text-[0.7rem] leading-relaxed tracking-[0.16em] text-accent uppercase sm:mb-8">
+            04 / Contact
+          </p>
+          <h2
+            id="contact-title"
+            className="text-[clamp(3rem,5.4vw,6rem)] leading-[0.96] font-normal tracking-[-0.04em] text-paper"
+          >
+            Let&apos;s connect.
+          </h2>
+          <p className="mx-auto mt-5 max-w-lg text-base leading-relaxed text-[#c4cbbf] sm:mt-7 sm:text-lg">
+            Find me around the web or send a note. I&apos;m always glad to talk
+            about thoughtful software and interesting problems.
+          </p>
+
+          <div className="relative mx-auto mt-10 aspect-square w-full max-w-[38rem] sm:mt-14">
+            <div
+              className="absolute inset-[12%] rounded-full bg-[radial-gradient(circle,#e8b85b1f_0%,#27372c66_38%,transparent_72%)] blur-2xl"
+              aria-hidden="true"
+            />
+
+            <div
+              className="pointer-events-none absolute left-1/2 top-1/2 h-px w-[37%] origin-left rotate-0 bg-gradient-to-r from-accent/70 to-paper/10 animate-[connector-glow_3.2s_ease-in-out_infinite] motion-reduce:animate-none"
+              aria-hidden="true"
+            />
+            <div
+              className="pointer-events-none absolute left-1/2 top-1/2 h-px w-[37%] origin-left rotate-[51deg] bg-gradient-to-r from-accent/70 to-paper/10 animate-[connector-glow_3.2s_0.3s_ease-in-out_infinite] motion-reduce:animate-none"
+              aria-hidden="true"
+            />
+            <div
+              className="pointer-events-none absolute left-1/2 top-1/2 h-px w-[37%] origin-left rotate-[103deg] bg-gradient-to-r from-accent/70 to-paper/10 animate-[connector-glow_3.2s_0.6s_ease-in-out_infinite] motion-reduce:animate-none"
+              aria-hidden="true"
+            />
+            <div
+              className="pointer-events-none absolute left-1/2 top-1/2 h-px w-[37%] origin-left rotate-[154deg] bg-gradient-to-r from-accent/70 to-paper/10 animate-[connector-glow_3.2s_0.9s_ease-in-out_infinite] motion-reduce:animate-none"
+              aria-hidden="true"
+            />
+            <div
+              className="pointer-events-none absolute left-1/2 top-1/2 h-px w-[37%] origin-left rotate-[206deg] bg-gradient-to-r from-accent/70 to-paper/10 animate-[connector-glow_3.2s_1.2s_ease-in-out_infinite] motion-reduce:animate-none"
+              aria-hidden="true"
+            />
+            <div
+              className="pointer-events-none absolute left-1/2 top-1/2 h-px w-[37%] origin-left rotate-[257deg] bg-gradient-to-r from-accent/70 to-paper/10 animate-[connector-glow_3.2s_1.5s_ease-in-out_infinite] motion-reduce:animate-none"
+              aria-hidden="true"
+            />
+            <div
+              className="pointer-events-none absolute left-1/2 top-1/2 h-px w-[37%] origin-left rotate-[309deg] bg-gradient-to-r from-accent/70 to-paper/10 animate-[connector-glow_3.2s_1.8s_ease-in-out_infinite] motion-reduce:animate-none"
+              aria-hidden="true"
+            />
+
+            <div className="absolute left-1/2 top-1/2 z-10 size-[min(42vw,15rem)] -translate-x-1/2 -translate-y-1/2 rounded-full border border-paper/35 bg-ink p-2 shadow-[0_0_3rem_#e8b85b22] sm:size-[17rem]">
+              <Image
+                src="/profile.jpg"
+                alt="Portrait of the portfolio owner"
+                width={420}
+                height={420}
+                className="size-full rounded-full object-cover"
+              />
+            </div>
+
+            <a
+              href="#contact"
+              aria-label="Reddit profile link, add your URL"
+              className="group absolute left-[48%] top-[2%] z-20 flex size-12 -translate-x-1/2 flex-col items-center justify-center gap-1 text-accent animate-[social-float_4s_ease-in-out_infinite] motion-reduce:animate-none sm:size-14"
+            >
+              <FaRedditAlien className="size-6 transition-transform group-hover:scale-125 sm:size-7" />
+              <span className="font-mono text-[0.55rem] uppercase tracking-[0.12em] text-paper">
+                Reddit
+              </span>
+            </a>
+            <a
+              href="#contact"
+              aria-label="GitHub profile link, add your URL"
+              className="group absolute right-[5%] top-[18%] z-20 flex size-12 flex-col items-center justify-center gap-1 text-accent animate-[social-float_4.2s_0.25s_ease-in-out_infinite] motion-reduce:animate-none sm:size-14"
+            >
+              <FaGithub className="size-6 transition-transform group-hover:scale-125 sm:size-7" />
+              <span className="font-mono text-[0.55rem] uppercase tracking-[0.12em] text-paper">
+                GitHub
+              </span>
+            </a>
+            <a
+              href="#contact"
+              aria-label="Telegram profile link, add your URL"
+              className="group absolute right-[1%] top-[61%] z-20 flex size-12 flex-col items-center justify-center gap-1 text-accent animate-[social-float_3.8s_0.5s_ease-in-out_infinite] motion-reduce:animate-none sm:size-14"
+            >
+              <FaTelegram className="size-6 transition-transform group-hover:scale-125 sm:size-7" />
+              <span className="font-mono text-[0.55rem] uppercase tracking-[0.12em] text-paper">
+                Telegram
+              </span>
+            </a>
+            <a
+              href="#contact"
+              aria-label="Instagram profile link, add your URL"
+              className="group absolute bottom-[2%] right-[22%] z-20 flex size-12 flex-col items-center justify-center gap-1 text-accent animate-[social-float_4.4s_0.75s_ease-in-out_infinite] motion-reduce:animate-none sm:size-14"
+            >
+              <FaInstagram className="size-6 transition-transform group-hover:scale-125 sm:size-7" />
+              <span className="font-mono text-[0.55rem] uppercase tracking-[0.12em] text-paper">
+                Instagram
+              </span>
+            </a>
+            <a
+              href="#contact"
+              aria-label="X profile link, add your URL"
+              className="group absolute bottom-[2%] left-[21%] z-20 flex size-12 flex-col items-center justify-center gap-1 text-accent animate-[social-float_4s_1s_ease-in-out_infinite] motion-reduce:animate-none sm:size-14"
+            >
+              <FaXTwitter className="size-6 transition-transform group-hover:scale-125 sm:size-7" />
+              <span className="font-mono text-[0.55rem] uppercase tracking-[0.12em] text-paper">
+                X
+              </span>
+            </a>
+            <a
+              href="#contact"
+              aria-label="LinkedIn profile link, add your URL"
+              className="group absolute left-[1%] top-[61%] z-20 flex size-12 flex-col items-center justify-center gap-1 text-accent animate-[social-float_4.3s_1.25s_ease-in-out_infinite] motion-reduce:animate-none sm:size-14"
+            >
+              <FaLinkedinIn className="size-6 transition-transform group-hover:scale-125 sm:size-7" />
+              <span className="font-mono text-[0.55rem] uppercase tracking-[0.12em] text-paper">
+                LinkedIn
+              </span>
+            </a>
+            <a
+              href="#contact"
+              aria-label="Email link, add your address"
+              className="group absolute left-[5%] top-[18%] z-20 flex size-12 flex-col items-center justify-center gap-1 text-accent animate-[social-float_3.9s_1.5s_ease-in-out_infinite] motion-reduce:animate-none sm:size-14"
+            >
+              <FaEnvelope className="size-6 transition-transform group-hover:scale-125 sm:size-7" />
+              <span className="font-mono text-[0.55rem] uppercase tracking-[0.12em] text-paper">
+                Email
+              </span>
+            </a>
           </div>
         </div>
       </section>
