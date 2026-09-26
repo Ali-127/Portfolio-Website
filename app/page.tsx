@@ -17,7 +17,7 @@ export default function Home() {
         className="pointer-events-none absolute inset-0 opacity-50 bg-[linear-gradient(#dfe7d914_1px,transparent_1px),linear-gradient(90deg,#dfe7d914_1px,transparent_1px)] bg-size-[5rem_5rem] mask-[linear-gradient(90deg,black,transparent_80%)]"
         aria-hidden="true"
       />
-      <div className="relative mx-auto grid min-h-screen w-full max-w-7xl grid-cols-1 items-center gap-4 px-6 py-16 sm:px-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(20rem,1fr)] lg:gap-24 lg:px-20 lg:py-28">
+      <div className="relative mx-auto grid min-h-screen w-full max-w-8xl grid-cols-1 items-center gap-4 px-6 py-16 sm:px-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(20rem,1fr)] lg:gap-24 lg:px-20 lg:py-28">
         <section
           className="relative z-10 order-2 max-w-xl sm:order-1"
           aria-labelledby="hero-title"
@@ -29,12 +29,11 @@ export default function Home() {
             id="hero-title"
             className="mb-0 max-w-[12ch] animate-[rise-in_0.9s_0.2s_both] text-[clamp(3.5rem,7vw,7.5rem)] leading-[0.94] font-normal tracking-[-0.04em] text-paper motion-reduce:animate-none"
           >
-            Thoughtful software,
-            <span className="block text-muted"> made tangible.</span>
+            I build software that solves real problems.
+            {/* <span className="block text-muted"> made tangible.</span> */}
           </h1>
           <p className="mt-7 max-w-lg animate-[rise-in_0.9s_0.35s_both] text-[clamp(1rem,1.5vw,1.25rem)] leading-relaxed text-[#c4cbbf] motion-reduce:animate-none sm:mt-10">
-            I turn complex ideas into clear, useful digital experiences with
-            code that is considered from the first interaction to the last.
+            I&apos;m a software engineer focused on building modern web applications and reliable backend systems. I enjoy turning ideas into well-structured, usable products, from the architecture and data behind an application to the interface people actually interact with.
           </p>
           <div
             className="my-8 h-px w-16 origin-left animate-[grow-in_0.9s_0.55s_both] bg-accent motion-reduce:animate-none sm:my-12"
@@ -50,11 +49,11 @@ export default function Home() {
           aria-label="Profile photo"
         >
           <div
-            className="absolute h-[105%] w-[72%] rounded-full border border-t-transparent border-r-accent/60 border-b-accent/60 border-l-transparent opacity-55 animate-[orbit-reverse_18s_linear_infinite] motion-reduce:animate-none sm:h-[110%] sm:w-[63%]"
+            className="absolute size-[min(76vw,20rem)] rounded-full border border-t-transparent border-r-accent/60 border-b-accent/60 border-l-transparent opacity-55 animate-[orbit-reverse_18s_linear_infinite] motion-reduce:animate-none sm:size-[min(58vw,28rem)] lg:size-[min(40vw,32rem)]"
             aria-hidden="true"
           />
           <div
-            className="absolute h-[105%] w-[72%] rotate-32 rounded-full border border-t-accent/60 border-r-transparent border-b-transparent border-l-accent/60 animate-[orbit_14s_linear_infinite] motion-reduce:animate-none sm:h-[110%] sm:w-[63%]"
+            className="absolute size-[min(76vw,20rem)] rotate-32 rounded-full border border-t-accent/60 border-r-transparent border-b-transparent border-l-accent/60 animate-[orbit_14s_linear_infinite] motion-reduce:animate-none sm:size-[min(58vw,28rem)] lg:size-[min(40vw,32rem)]"
             aria-hidden="true"
           />
           <div
@@ -64,7 +63,7 @@ export default function Home() {
           <div className="relative z-10 rotate-[-4deg] rounded-full border border-paper/40 p-3 animate-[portrait-in_1.1s_0.15s_both] motion-reduce:animate-none">
             <Image
               className="block size-[min(62vw,18rem)] rounded-full object-cover sm:size-[clamp(16rem,31vw,26rem)]"
-              src="/profile.jpg"
+              src="/profile2.png"
               width={420}
               height={420}
               alt="Portrait of the portfolio owner"
@@ -249,9 +248,9 @@ export default function Home() {
             </div>
             <div className="relative order-1 overflow-hidden border border-paper/20 bg-[#151d18] p-5 sm:p-8 lg:order-2">
               <div className="mb-8 flex items-center gap-2 border-b border-paper/15 pb-4">
-                <span className="size-2 rounded-full bg-[#e8b85b]" />
-                <span className="size-2 rounded-full bg-[#a7afa1]/70" />
-                <span className="size-2 rounded-full bg-[#a7afa1]/40" />
+                <span className="size-2 rounded-full bg-accent" />
+                <span className="size-2 rounded-full bg-muted/70" />
+                <span className="size-2 rounded-full bg-muted/40" />
                 <span className="ml-auto font-mono text-[0.65rem] tracking-[0.12em] text-muted uppercase">
                   taskflow / api
                 </span>
@@ -286,7 +285,7 @@ export default function Home() {
                   (feature) => (
                     <span
                       key={feature}
-                      className="border border-paper/20 px-2.5 py-1.5 font-mono text-[0.6rem] tracking-[0.1em] text-muted"
+                      className="border border-paper/20 px-2.5 py-1.5 font-mono text-[0.6rem] tracking-widest text-muted"
                     >
                       {feature}
                     </span>
@@ -300,140 +299,67 @@ export default function Home() {
 
       <section
         id="contact"
-        className="relative overflow-hidden px-6 py-24 sm:px-10 sm:py-32 lg:px-20 lg:py-40"
+        className="relative overflow-hidden px-6 py-20 sm:px-10 sm:py-28 lg:px-20 lg:py-36"
         aria-labelledby="contact-title"
       >
-        <div className="mx-auto max-w-7xl text-center">
-          <p className="mb-5 font-mono text-[0.7rem] leading-relaxed tracking-[0.16em] text-accent uppercase sm:mb-8">
-            04 / Contact
-          </p>
-          <h2
-            id="contact-title"
-            className="text-[clamp(3rem,5.4vw,6rem)] leading-[0.96] font-normal tracking-[-0.04em] text-paper"
-          >
-            Let&apos;s connect.
-          </h2>
-          <p className="mx-auto mt-5 max-w-lg text-base leading-relaxed text-[#c4cbbf] sm:mt-7 sm:text-lg">
-            Find me around the web or send a note. I&apos;m always glad to talk
-            about thoughtful software and interesting problems.
-          </p>
-
-          <div className="relative mx-auto mt-10 aspect-square w-full max-w-[38rem] sm:mt-14">
-            <div
-              className="absolute inset-[12%] rounded-full bg-[radial-gradient(circle,#e8b85b1f_0%,#27372c66_38%,transparent_72%)] blur-2xl"
-              aria-hidden="true"
-            />
-
-            <div
-              className="pointer-events-none absolute left-1/2 top-1/2 h-px w-[37%] origin-left rotate-0 bg-gradient-to-r from-accent/70 to-paper/10 animate-[connector-glow_3.2s_ease-in-out_infinite] motion-reduce:animate-none"
-              aria-hidden="true"
-            />
-            <div
-              className="pointer-events-none absolute left-1/2 top-1/2 h-px w-[37%] origin-left rotate-[51deg] bg-gradient-to-r from-accent/70 to-paper/10 animate-[connector-glow_3.2s_0.3s_ease-in-out_infinite] motion-reduce:animate-none"
-              aria-hidden="true"
-            />
-            <div
-              className="pointer-events-none absolute left-1/2 top-1/2 h-px w-[37%] origin-left rotate-[103deg] bg-gradient-to-r from-accent/70 to-paper/10 animate-[connector-glow_3.2s_0.6s_ease-in-out_infinite] motion-reduce:animate-none"
-              aria-hidden="true"
-            />
-            <div
-              className="pointer-events-none absolute left-1/2 top-1/2 h-px w-[37%] origin-left rotate-[154deg] bg-gradient-to-r from-accent/70 to-paper/10 animate-[connector-glow_3.2s_0.9s_ease-in-out_infinite] motion-reduce:animate-none"
-              aria-hidden="true"
-            />
-            <div
-              className="pointer-events-none absolute left-1/2 top-1/2 h-px w-[37%] origin-left rotate-[206deg] bg-gradient-to-r from-accent/70 to-paper/10 animate-[connector-glow_3.2s_1.2s_ease-in-out_infinite] motion-reduce:animate-none"
-              aria-hidden="true"
-            />
-            <div
-              className="pointer-events-none absolute left-1/2 top-1/2 h-px w-[37%] origin-left rotate-[257deg] bg-gradient-to-r from-accent/70 to-paper/10 animate-[connector-glow_3.2s_1.5s_ease-in-out_infinite] motion-reduce:animate-none"
-              aria-hidden="true"
-            />
-            <div
-              className="pointer-events-none absolute left-1/2 top-1/2 h-px w-[37%] origin-left rotate-[309deg] bg-gradient-to-r from-accent/70 to-paper/10 animate-[connector-glow_3.2s_1.8s_ease-in-out_infinite] motion-reduce:animate-none"
-              aria-hidden="true"
-            />
-
-            <div className="absolute left-1/2 top-1/2 z-10 size-[min(42vw,15rem)] -translate-x-1/2 -translate-y-1/2 rounded-full border border-paper/35 bg-ink p-2 shadow-[0_0_3rem_#e8b85b22] sm:size-[17rem]">
-              <Image
-                src="/profile.jpg"
-                alt="Portrait of the portfolio owner"
-                width={420}
-                height={420}
-                className="size-full rounded-full object-cover"
-              />
-            </div>
-
-            <a
-              href="#contact"
-              aria-label="Reddit profile link, add your URL"
-              className="group absolute left-[48%] top-[2%] z-20 flex size-12 -translate-x-1/2 flex-col items-center justify-center gap-1 text-accent animate-[social-float_4s_ease-in-out_infinite] motion-reduce:animate-none sm:size-14"
+        <div className="mx-auto grid max-w-7xl items-center gap-12 border-t border-paper/20 pt-12 sm:gap-16 sm:pt-16 lg:grid-cols-[minmax(0,0.85fr)_minmax(28rem,1.15fr)] lg:gap-24">
+          <div className="max-w-xl">
+            <p className="mb-5 font-mono text-[0.7rem] leading-relaxed tracking-[0.16em] text-accent uppercase sm:mb-8">
+              04 / Contact
+            </p>
+            <h2
+              id="contact-title"
+              className="max-w-[10ch] text-[clamp(3rem,5.4vw,6rem)] leading-[0.96] font-normal tracking-[-0.04em] text-paper"
             >
-              <FaRedditAlien className="size-6 transition-transform group-hover:scale-125 sm:size-7" />
-              <span className="font-mono text-[0.55rem] uppercase tracking-[0.12em] text-paper">
-                Reddit
-              </span>
-            </a>
-            <a
-              href="#contact"
-              aria-label="GitHub profile link, add your URL"
-              className="group absolute right-[5%] top-[18%] z-20 flex size-12 flex-col items-center justify-center gap-1 text-accent animate-[social-float_4.2s_0.25s_ease-in-out_infinite] motion-reduce:animate-none sm:size-14"
-            >
-              <FaGithub className="size-6 transition-transform group-hover:scale-125 sm:size-7" />
-              <span className="font-mono text-[0.55rem] uppercase tracking-[0.12em] text-paper">
-                GitHub
-              </span>
-            </a>
-            <a
-              href="#contact"
-              aria-label="Telegram profile link, add your URL"
-              className="group absolute right-[1%] top-[61%] z-20 flex size-12 flex-col items-center justify-center gap-1 text-accent animate-[social-float_3.8s_0.5s_ease-in-out_infinite] motion-reduce:animate-none sm:size-14"
-            >
-              <FaTelegram className="size-6 transition-transform group-hover:scale-125 sm:size-7" />
-              <span className="font-mono text-[0.55rem] uppercase tracking-[0.12em] text-paper">
-                Telegram
-              </span>
-            </a>
-            <a
-              href="#contact"
-              aria-label="Instagram profile link, add your URL"
-              className="group absolute bottom-[2%] right-[22%] z-20 flex size-12 flex-col items-center justify-center gap-1 text-accent animate-[social-float_4.4s_0.75s_ease-in-out_infinite] motion-reduce:animate-none sm:size-14"
-            >
-              <FaInstagram className="size-6 transition-transform group-hover:scale-125 sm:size-7" />
-              <span className="font-mono text-[0.55rem] uppercase tracking-[0.12em] text-paper">
-                Instagram
-              </span>
-            </a>
-            <a
-              href="#contact"
-              aria-label="X profile link, add your URL"
-              className="group absolute bottom-[2%] left-[21%] z-20 flex size-12 flex-col items-center justify-center gap-1 text-accent animate-[social-float_4s_1s_ease-in-out_infinite] motion-reduce:animate-none sm:size-14"
-            >
-              <FaXTwitter className="size-6 transition-transform group-hover:scale-125 sm:size-7" />
-              <span className="font-mono text-[0.55rem] uppercase tracking-[0.12em] text-paper">
-                X
-              </span>
-            </a>
-            <a
-              href="#contact"
-              aria-label="LinkedIn profile link, add your URL"
-              className="group absolute left-[1%] top-[61%] z-20 flex size-12 flex-col items-center justify-center gap-1 text-accent animate-[social-float_4.3s_1.25s_ease-in-out_infinite] motion-reduce:animate-none sm:size-14"
-            >
-              <FaLinkedinIn className="size-6 transition-transform group-hover:scale-125 sm:size-7" />
-              <span className="font-mono text-[0.55rem] uppercase tracking-[0.12em] text-paper">
-                LinkedIn
-              </span>
-            </a>
-            <a
-              href="#contact"
-              aria-label="Email link, add your address"
-              className="group absolute left-[5%] top-[18%] z-20 flex size-12 flex-col items-center justify-center gap-1 text-accent animate-[social-float_3.9s_1.5s_ease-in-out_infinite] motion-reduce:animate-none sm:size-14"
-            >
-              <FaEnvelope className="size-6 transition-transform group-hover:scale-125 sm:size-7" />
-              <span className="font-mono text-[0.55rem] uppercase tracking-[0.12em] text-paper">
-                Email
-              </span>
-            </a>
+              Let&apos;s make something useful.
+            </h2>
+            <p className="mt-6 max-w-lg text-base leading-relaxed text-[#c4cbbf] sm:mt-8 sm:text-lg">
+              Have an interesting problem or an idea worth exploring? Find me
+              around the web, or send a note and let&apos;s start a conversation.
+            </p>
+            <div className="mt-8 h-px w-16 bg-accent sm:mt-10" aria-hidden="true" />
+            <p className="mt-5 font-mono text-[0.7rem] leading-relaxed tracking-[0.16em] text-muted uppercase">
+              Open to thoughtful collaborations
+            </p>
           </div>
+
+          <nav aria-label="Social and contact links" className="grid grid-cols-1 border-t border-paper/20 sm:grid-cols-2">
+            <a href="#contact" aria-label="Reddit profile link, add your URL" className="group flex min-h-20 animate-[rise-in_0.6s_0.05s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/[0.03] motion-reduce:animate-none sm:border-r sm:px-5">
+              <FaRedditAlien className="size-5 shrink-0 text-accent transition-transform group-hover:scale-110" />
+              <span className="font-mono text-xs uppercase tracking-[0.12em]">Reddit</span>
+              <span className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent" aria-hidden="true">↗</span>
+            </a>
+            <a href="#contact" aria-label="GitHub profile link, add your URL" className="group flex min-h-20 animate-[rise-in_0.6s_0.1s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/[0.03] motion-reduce:animate-none sm:px-5">
+              <FaGithub className="size-5 shrink-0 text-accent transition-transform group-hover:scale-110" />
+              <span className="font-mono text-xs uppercase tracking-[0.12em]">GitHub</span>
+              <span className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent" aria-hidden="true">↗</span>
+            </a>
+            <a href="#contact" aria-label="Telegram profile link, add your URL" className="group flex min-h-20 animate-[rise-in_0.6s_0.15s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/[0.03] motion-reduce:animate-none sm:border-r sm:px-5">
+              <FaTelegram className="size-5 shrink-0 text-accent transition-transform group-hover:scale-110" />
+              <span className="font-mono text-xs uppercase tracking-[0.12em]">Telegram</span>
+              <span className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent" aria-hidden="true">↗</span>
+            </a>
+            <a href="#contact" aria-label="Instagram profile link, add your URL" className="group flex min-h-20 animate-[rise-in_0.6s_0.2s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/[0.03] motion-reduce:animate-none sm:px-5">
+              <FaInstagram className="size-5 shrink-0 text-accent transition-transform group-hover:scale-110" />
+              <span className="font-mono text-xs uppercase tracking-[0.12em]">Instagram</span>
+              <span className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent" aria-hidden="true">↗</span>
+            </a>
+            <a href="#contact" aria-label="X profile link, add your URL" className="group flex min-h-20 animate-[rise-in_0.6s_0.25s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/[0.03] motion-reduce:animate-none sm:border-r sm:px-5">
+              <FaXTwitter className="size-5 shrink-0 text-accent transition-transform group-hover:scale-110" />
+              <span className="font-mono text-xs uppercase tracking-[0.12em]">X</span>
+              <span className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent" aria-hidden="true">↗</span>
+            </a>
+            <a href="#contact" aria-label="LinkedIn profile link, add your URL" className="group flex min-h-20 animate-[rise-in_0.6s_0.3s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/[0.03] motion-reduce:animate-none sm:px-5">
+              <FaLinkedinIn className="size-5 shrink-0 text-accent transition-transform group-hover:scale-110" />
+              <span className="font-mono text-xs uppercase tracking-[0.12em]">LinkedIn</span>
+              <span className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent" aria-hidden="true">↗</span>
+            </a>
+            <a href="#contact" aria-label="Email link, add your address" className="group col-span-1 flex min-h-20 animate-[rise-in_0.6s_0.35s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/[0.03] motion-reduce:animate-none sm:col-span-2 sm:px-5">
+              <FaEnvelope className="size-5 shrink-0 text-accent transition-transform group-hover:scale-110" />
+              <span className="font-mono text-xs uppercase tracking-[0.12em]">Email</span>
+              <span className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent" aria-hidden="true">↗</span>
+            </a>
+          </nav>
         </div>
       </section>
     </main>
