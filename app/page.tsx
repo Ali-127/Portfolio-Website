@@ -33,7 +33,11 @@ export default function Home() {
             {/* <span className="block text-muted"> made tangible.</span> */}
           </h1>
           <p className="mt-7 max-w-lg animate-[rise-in_0.9s_0.35s_both] text-[clamp(1rem,1.5vw,1.25rem)] leading-relaxed text-[#c4cbbf] motion-reduce:animate-none sm:mt-10">
-            I&apos;m a software engineer focused on building modern web applications and reliable backend systems. I enjoy turning ideas into well-structured, usable products, from the architecture and data behind an application to the interface people actually interact with.
+            I&apos;m a software engineer focused on building modern web
+            applications and reliable backend systems. I enjoy turning ideas
+            into well-structured, usable products, from the architecture and
+            data behind an application to the interface people actually interact
+            with.
           </p>
           <div
             className="my-8 h-px w-16 origin-left animate-[grow-in_0.9s_0.55s_both] bg-accent motion-reduce:animate-none sm:my-12"
@@ -315,49 +319,137 @@ export default function Home() {
             </h2>
             <p className="mt-6 max-w-lg text-base leading-relaxed text-[#c4cbbf] sm:mt-8 sm:text-lg">
               Have an interesting problem or an idea worth exploring? Find me
-              around the web, or send a note and let&apos;s start a conversation.
+              around the web, or send a note and let&apos;s start a
+              conversation.
             </p>
-            <div className="mt-8 h-px w-16 bg-accent sm:mt-10" aria-hidden="true" />
+            <div
+              className="mt-8 h-px w-16 bg-accent sm:mt-10"
+              aria-hidden="true"
+            />
             <p className="mt-5 font-mono text-[0.7rem] leading-relaxed tracking-[0.16em] text-muted uppercase">
               Open to thoughtful collaborations
             </p>
           </div>
 
-          <nav aria-label="Social and contact links" className="grid grid-cols-1 border-t border-paper/20 sm:grid-cols-2">
-            <a href="#contact" aria-label="Reddit profile link, add your URL" className="group flex min-h-20 animate-[rise-in_0.6s_0.05s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/[0.03] motion-reduce:animate-none sm:border-r sm:px-5">
+          <nav
+            aria-label="Social and contact links"
+            className="grid grid-cols-1 border-t border-paper/20 sm:grid-cols-2"
+          >
+            <a
+              href="#contact"
+              aria-label="Reddit profile link, add your URL"
+              className="group flex min-h-20 animate-[rise-in_0.6s_0.05s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/3 motion-reduce:animate-none sm:border-r sm:px-5"
+            >
               <FaRedditAlien className="size-5 shrink-0 text-accent transition-transform group-hover:scale-110" />
-              <span className="font-mono text-xs uppercase tracking-[0.12em]">Reddit</span>
-              <span className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent" aria-hidden="true">↗</span>
+              <span className="font-mono text-xs uppercase tracking-[0.12em]">
+                Reddit
+              </span>
+              <span
+                className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent"
+                aria-hidden="true"
+              >
+                ↗
+              </span>
             </a>
-            <a href="#contact" aria-label="GitHub profile link, add your URL" className="group flex min-h-20 animate-[rise-in_0.6s_0.1s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/[0.03] motion-reduce:animate-none sm:px-5">
+            <a
+              href="https://github.com/Ali-127"
+              aria-label="GitHub profile link, add your URL"
+              className="group flex min-h-20 animate-[rise-in_0.6s_0.1s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/3 motion-reduce:animate-none sm:px-5"
+              target="_blank"
+            >
               <FaGithub className="size-5 shrink-0 text-accent transition-transform group-hover:scale-110" />
-              <span className="font-mono text-xs uppercase tracking-[0.12em]">GitHub</span>
-              <span className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent" aria-hidden="true">↗</span>
+              <span className="font-mono text-xs uppercase tracking-[0.12em]">
+                GitHub
+              </span>
+              <span
+                className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent"
+                aria-hidden="true"
+              >
+                ↗
+              </span>
             </a>
-            <a href="#contact" aria-label="Telegram profile link, add your URL" className="group flex min-h-20 animate-[rise-in_0.6s_0.15s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/[0.03] motion-reduce:animate-none sm:border-r sm:px-5">
+            <a
+              href="https://t.me/alimehdizadeh66"
+              aria-label="Telegram profile link, add your URL"
+              className="group flex min-h-20 animate-[rise-in_0.6s_0.15s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/3 motion-reduce:animate-none sm:border-r sm:px-5"
+              target="_blank"
+            >
               <FaTelegram className="size-5 shrink-0 text-accent transition-transform group-hover:scale-110" />
-              <span className="font-mono text-xs uppercase tracking-[0.12em]">Telegram</span>
-              <span className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent" aria-hidden="true">↗</span>
+              <span className="font-mono text-xs uppercase tracking-[0.12em]">
+                Telegram
+              </span>
+              <span
+                className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent"
+                aria-hidden="true"
+              >
+                ↗
+              </span>
             </a>
-            <a href="#contact" aria-label="Instagram profile link, add your URL" className="group flex min-h-20 animate-[rise-in_0.6s_0.2s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/[0.03] motion-reduce:animate-none sm:px-5">
+            <a
+              href="https://www.instagram.com/alimehdizadehh?utm_source=qr&stkn=MWdtdHhrM3lwOW9taA=="
+              aria-label="Instagram profile link, add your URL"
+              className="group flex min-h-20 animate-[rise-in_0.6s_0.2s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/3 motion-reduce:animate-none sm:px-5"
+              target="_blank"
+            >
               <FaInstagram className="size-5 shrink-0 text-accent transition-transform group-hover:scale-110" />
-              <span className="font-mono text-xs uppercase tracking-[0.12em]">Instagram</span>
-              <span className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent" aria-hidden="true">↗</span>
+              <span className="font-mono text-xs uppercase tracking-[0.12em]">
+                Instagram
+              </span>
+              <span
+                className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent"
+                aria-hidden="true"
+              >
+                ↗
+              </span>
             </a>
-            <a href="#contact" aria-label="X profile link, add your URL" className="group flex min-h-20 animate-[rise-in_0.6s_0.25s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/[0.03] motion-reduce:animate-none sm:border-r sm:px-5">
+            <a
+              href="https://x.com/Alimehdizadehh"
+              aria-label="X profile link, add your URL"
+              className="group flex min-h-20 animate-[rise-in_0.6s_0.25s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/3 motion-reduce:animate-none sm:border-r sm:px-5"
+              target="_blank"
+            >
               <FaXTwitter className="size-5 shrink-0 text-accent transition-transform group-hover:scale-110" />
-              <span className="font-mono text-xs uppercase tracking-[0.12em]">X</span>
-              <span className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent" aria-hidden="true">↗</span>
+              <span className="font-mono text-xs uppercase tracking-[0.12em]">
+                X
+              </span>
+              <span
+                className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent"
+                aria-hidden="true"
+              >
+                ↗
+              </span>
             </a>
-            <a href="#contact" aria-label="LinkedIn profile link, add your URL" className="group flex min-h-20 animate-[rise-in_0.6s_0.3s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/[0.03] motion-reduce:animate-none sm:px-5">
+            <a
+              href="#contact"
+              aria-label="LinkedIn profile link, add your URL"
+              className="group flex min-h-20 animate-[rise-in_0.6s_0.3s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/3 motion-reduce:animate-none sm:px-5"
+            >
               <FaLinkedinIn className="size-5 shrink-0 text-accent transition-transform group-hover:scale-110" />
-              <span className="font-mono text-xs uppercase tracking-[0.12em]">LinkedIn</span>
-              <span className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent" aria-hidden="true">↗</span>
+              <span className="font-mono text-xs uppercase tracking-[0.12em]">
+                LinkedIn
+              </span>
+              <span
+                className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent"
+                aria-hidden="true"
+              >
+                ↗
+              </span>
             </a>
-            <a href="#contact" aria-label="Email link, add your address" className="group col-span-1 flex min-h-20 animate-[rise-in_0.6s_0.35s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/[0.03] motion-reduce:animate-none sm:col-span-2 sm:px-5">
+            <a
+              href="mailto:alimehdizadeh.dev@gmail.com"
+              aria-label="Email link, add your address"
+              className="group col-span-1 flex min-h-20 animate-[rise-in_0.6s_0.35s_both] items-center gap-4 border-b border-paper/20 px-3 py-4 text-paper transition-colors hover:bg-paper/3 motion-reduce:animate-none sm:col-span-2 sm:px-5"
+            >
               <FaEnvelope className="size-5 shrink-0 text-accent transition-transform group-hover:scale-110" />
-              <span className="font-mono text-xs uppercase tracking-[0.12em]">Email</span>
-              <span className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent" aria-hidden="true">↗</span>
+              <span className="font-mono text-xs uppercase tracking-[0.12em]">
+                Email
+              </span>
+              <span
+                className="ml-auto text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent"
+                aria-hidden="true"
+              >
+                ↗
+              </span>
             </a>
           </nav>
         </div>
